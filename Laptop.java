@@ -26,7 +26,6 @@
 
 public class Laptop {
     private String brand; // Бренд
-    // private String model; // Модель
     private String os; // Операционная система
     private int ram; // ОЗУ в ГБ
     private int storage; // Объем ЖД в ГБ
@@ -41,7 +40,6 @@ public class Laptop {
             String color, double screenSize, String resolution,
             String cpuType, double price) {
         this.brand = brand;
-        // this.model = model;
         this.os = os;
         this.ram = ram;
         this.storage = storage;
@@ -60,14 +58,6 @@ public class Laptop {
     public void setBrand(String brand) {
         this.brand = brand;
     }
-
-    // public String getModel() {
-    //     return model;
-    // }
-
-    // public void setModel(String model) {
-    //     this.model = model;
-    // }
 
     public String getOs() {
         return os;
@@ -132,22 +122,6 @@ public class Laptop {
     public void setPrice(double price) {
         this.price = price;
     }
-
-    // @Override
-    // public String toString() {
-    // return "Ноутбук (" +
-    // "Бренд = '" + brand + '\'' +
-    // ", Модель = '" + model + '\'' +
-    // ", ОС = '" + os + '\'' +
-    // ", ОЗУ = " + ram +
-    // ", HDD/SSD = " + storage +
-    // ", Цвет = '" + color + '\'' +
-    // ", Размер экрана = " + screenSize +
-    // ", Разрешение = '" + resolution + '\'' +
-    // ", Процессор = '" + cpuType + '\'' +
-    // ", Цена = " + price +
-    // ')';
-    // }
 
     @Override
 
