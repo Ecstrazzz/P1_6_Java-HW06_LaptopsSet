@@ -24,7 +24,7 @@
  * 
  */
 
- public class Laptop {
+public class Laptop {
     private String brand; // Бренд
     private String model; // Модель
     private String os; // Операционная система
@@ -37,9 +37,9 @@
     private double price; // Цена
 
     // Конструктор
-    public Laptop(String brand, String model, String os, int ram, int storage, 
-                  String color, double screenSize, String resolution, 
-                  String cpuType, double price) {
+    public Laptop(String brand, String model, String os, int ram, int storage,
+            String color, double screenSize, String resolution,
+            String cpuType, double price) {
         this.brand = brand;
         this.model = model;
         this.os = os;
@@ -115,37 +115,37 @@
 
     public void setResolution(String resolution) {
         this.resolution = resolution;
-     }
-     
-     public String getCpuType() {
-         return cpuType;
-     }
-     
-     public void setCpuType(String cpuType) {
-         this.cpuType = cpuType;
-     }
-     
-     public double getPrice() {
-         return price;
-     }
-     
-     public void setPrice(double price) {
-         this.price = price;
-     }
-     
-     @Override
-     public String toString() {
-         return "Laptop{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", os='" + os + '\'' +
-                ", ram=" + ram +
-                ", storage=" + storage +
-                ", color='" + color + '\'' +
-                ", screenSize=" + screenSize +
-                ", resolution='" + resolution + '\'' +
-                ", cpuType='" + cpuType + '\'' +
-                ", price=" + price +
-                '}';
-     }
+    }
+
+    public String getCpuType() {
+        return cpuType;
+    }
+
+    public void setCpuType(String cpuType) {
+        this.cpuType = cpuType;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Ноутбук (" +
+                "Бренд = '" + brand + '\'' +
+                ", Модель = '" + model + '\'' +
+                ", ОС = '" + os + '\'' +
+                ", ОЗУ = " + ram +
+                ", HDD/SSD = " + storage +
+                ", Цвет = '" + color + '\'' +
+                ", Размер экрана = " + screenSize +
+                ", Разрешение = '" + resolution + '\'' +
+                ", Процессор = '" + cpuType + '\'' +
+                ", Цена = " + price +
+                ')';
+    }
 }
