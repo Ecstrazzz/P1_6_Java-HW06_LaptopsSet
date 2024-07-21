@@ -26,7 +26,7 @@
 
 public class Laptop {
     private String brand; // Бренд
-    private String model; // Модель
+    // private String model; // Модель
     private String os; // Операционная система
     private int ram; // ОЗУ в ГБ
     private int storage; // Объем ЖД в ГБ
@@ -37,11 +37,11 @@ public class Laptop {
     private double price; // Цена
 
     // Конструктор
-    public Laptop(String brand, String model, String os, int ram, int storage,
+    public Laptop(String brand, String os, int ram, int storage,
             String color, double screenSize, String resolution,
             String cpuType, double price) {
         this.brand = brand;
-        this.model = model;
+        // this.model = model;
         this.os = os;
         this.ram = ram;
         this.storage = storage;
@@ -61,13 +61,13 @@ public class Laptop {
         this.brand = brand;
     }
 
-    public String getModel() {
-        return model;
-    }
+    // public String getModel() {
+    //     return model;
+    // }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
+    // public void setModel(String model) {
+    //     this.model = model;
+    // }
 
     public String getOs() {
         return os;
@@ -133,19 +133,32 @@ public class Laptop {
         this.price = price;
     }
 
+    // @Override
+    // public String toString() {
+    // return "Ноутбук (" +
+    // "Бренд = '" + brand + '\'' +
+    // ", Модель = '" + model + '\'' +
+    // ", ОС = '" + os + '\'' +
+    // ", ОЗУ = " + ram +
+    // ", HDD/SSD = " + storage +
+    // ", Цвет = '" + color + '\'' +
+    // ", Размер экрана = " + screenSize +
+    // ", Разрешение = '" + resolution + '\'' +
+    // ", Процессор = '" + cpuType + '\'' +
+    // ", Цена = " + price +
+    // ')';
+    // }
+
     @Override
+
     public String toString() {
-        return "Ноутбук (" +
-                "Бренд = '" + brand + '\'' +
-                ", Модель = '" + model + '\'' +
-                ", ОС = '" + os + '\'' +
-                ", ОЗУ = " + ram +
-                ", HDD/SSD = " + storage +
-                ", Цвет = '" + color + '\'' +
-                ", Размер экрана = " + screenSize +
-                ", Разрешение = '" + resolution + '\'' +
-                ", Процессор = '" + cpuType + '\'' +
-                ", Цена = " + price +
-                ')';
+
+        return String.format("%-10s %-9s %-8d %-10d %-10s %-15.1f %-10s %-10s %-10.2f",
+                brand, os, ram,
+                storage, color,
+                screenSize,
+                resolution,
+                cpuType,
+                price);
     }
 }
